@@ -1,108 +1,130 @@
-🎬 Project Description: Netflix Movies & TV Shows Analysis
+📊 Dataset Description
 
-This project explores the Netflix Titles Dataset using Data Analysis and Visualization techniques.
-It consists of three key parts:
+Source: Netflix Movies and TV Shows (Kaggle)
 
-Dataset
+Rows: 8,807
 
-Exploratory Data Analysis (Notebook)
+Columns: 12
 
-Interactive Dashboard
+Features:
 
-📊 1. Dataset Description
+type → Movie or TV Show
 
-Dataset Name: Netflix Movies and TV Shows Dataset (Kaggle)
+title → Name of the content
 
-Source: Kaggle
-File: netflix_titles.csv
-Total Entries: ~8,800 titles
+director → Director(s) of the content
 
-📋 Columns Description
-Column Name	Description
-show_id	Unique ID for each show/movie
-type	Whether it’s a Movie or TV Show
-title	Title of the content
-director	Director(s) of the content
-cast	Main cast members
-country	Country where the content was produced
-date_added	Date the content was added to Netflix
-release_year	Original release year
-rating	TV rating (e.g., TV-MA, PG, R)
-duration	Duration (minutes for movies or seasons for TV shows)
-listed_in	Genre or category
-description	Short summary of the content
-🔍 Purpose:
+cast → Main actors/actresses
 
-The dataset helps analyze content trends, country contributions, rating distributions, and genre preferences on Netflix.
+country → Country of origin
 
-📓 2. Notebook (Exploratory Data Analysis)
+release_year → Year of release
 
-The Jupyter Notebook performs the complete Data Cleaning, Exploration, and Visualization process.
-It contains step-by-step insights such as:
+rating → Age rating (e.g., TV-MA, PG-13)
 
-🧹 Data Cleaning
+duration → Duration in minutes or number of seasons
 
-Removed missing values and duplicates
+listed_in → Genres or categories
 
-Filled null entries with placeholders like "Unknown" or "Not Rated"
+description → Short summary
 
-Converted date_added to datetime and extracted year_added
+📒 Notebook Analysis
 
-📈 Key Visualizations
+The Jupyter Notebook (netflix-dataset-analysis-updated.ipynb) covers:
 
-Movies vs TV Shows Distribution
+Data Cleaning & Preprocessing
 
-Content Added Over the Years
+Exploratory Data Analysis (EDA)
 
-Top Countries Producing Netflix Content
+Insights on:
 
-Most Common Ratings
+Most popular genres
 
-Genre Analysis (Word Cloud)
+Content distribution across countries
 
-Trend of Content Release by Year
+Release year trends
 
-💡 Insights from Notebook
+Rating distributions
 
-Netflix has more movies than TV shows.
+Visualizations using Matplotlib, Seaborn, and WordCloud
 
-Most content was released between 2015–2020.
+Example visualization:
 
-The United States and India are top producers.
 
-The most common rating is TV-MA, showing mature content dominates the library.
+💻 Interactive Dashboard
 
-Popular genres include Dramas, Comedies, and Documentaries.
+The Streamlit Dashboard (app.py) allows users to:
 
-💻 3. Dashboard (Interactive Visualization)
+Filter by Type and Country
 
-The Streamlit Dashboard turns the EDA into an interactive app.
-It allows users to explore the dataset in real time using filters and visualizations.
+Explore Movies vs. TV Shows
 
-⚙️ Dashboard Features
+View Content Trends Over the Years
 
-Sidebar filters for Type, Country, and Rating
+Analyze Top Countries
 
-Interactive Plotly charts:
+See Ratings Distribution
 
-Bar chart: Movies vs TV Shows
+Dashboard preview:
 
-Line chart: Content added by Year
 
-Horizontal bar: Top Countries
+🚀 Technologies Used
 
-Pie chart: Rating Distribution
+Python 🐍
 
-Word Cloud: Genre popularity
+Pandas – Data cleaning and manipulation
 
-Live table view of dataset preview
+Matplotlib & Seaborn – Data visualization
 
-🎯 Purpose
+Plotly – Interactive visualizations
 
-To allow users to interactively explore Netflix content trends and gain insights through a visually appealing web interface.
+Streamlit – Dashboard development
 
-🖼️ Dashboard Preview
+⚙️ How to Run the Dashboard
 
-(Add your screenshot here)
+Install dependencies
 
-![Netflix Dashboard Screenshot](images/dashboard_preview.png)
+pip install pandas matplotlib seaborn plotly streamlit
+
+
+Run the Streamlit app
+
+streamlit run app.py
+
+
+Open in Browser
+
+http://localhost:8501
+
+💡 Insights
+
+The majority of Netflix content is Movies, not TV Shows.
+
+United States and India are top producers of Netflix content.
+
+A significant spike in new releases was observed after 2015.
+
+The most common rating category is TV-MA (Mature Audience).
+
+The Drama and Comedy genres dominate Netflix’s library.
+
+📸 Dashboard Gallery
+Dashboard Section	Preview
+Home	
+
+Filter Section	
+
+Charts	
+✨ Future Enhancements
+
+Add genre-based filtering
+
+Include recommendation engine
+
+Deploy on Streamlit Cloud for live demo
+
+👨‍💻 Author
+
+Rishi Raj
+📧 [Your Email or LinkedIn]
+🌐 GitHub Profile Link
